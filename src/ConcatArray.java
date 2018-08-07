@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class RegroupArray {
+public class ConcatArray {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         //Nhập mảng thứ 1
@@ -21,19 +21,17 @@ public class RegroupArray {
             array_2[i] = scanner.nextInt();
         }
 
-
-
-//        int[] array_1 = {1, 2, 3, 4, 5};
-//        int[] array_2 = {6, 7, 8, 9, 10};
-//        int[] array_3 = new int[10];
-//        for (int j = 0; j < 5; j++) {
-//            array_3[j] = array_1[j];
-//        }
-//        for (int i = 0; i < 5; i++) {
-//            array_3[i + 5] = array_2[i];
-//        }
-//        for (int i = 0; i < 10; i++) {
-//            System.out.printf(array_3[i]+"\t");
-//        }
+        //Hợp 2 mảng
+        int[] array_3 = new int[sizeOfArray_1 + sizeOfArray_2];
+        for (int i = 0; i < array_1.length; i++) {
+            array_3[i] = array_1[i];
+        }
+        for (int i = 0; i < array_2.length; i++) {
+            array_3[sizeOfArray_1 + i] = array_2[i];
+        }
+        System.out.println("Mảng sau khi hợp là:");
+        for (int i = 0; i < array_3.length; i++) {
+            System.out.printf(array_3[i] + "\t");
+        }
     }
 }
