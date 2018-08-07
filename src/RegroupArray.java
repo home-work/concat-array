@@ -12,6 +12,15 @@ public class RegroupArray {
             array_1[i] = scanner.nextInt();
         }
 
+        //Nhập mảng thứ 2
+        System.out.println("Nhập vào kích thước của mảng thứ 2:");
+        int sizeOfArray_2= scanner.nextInt();
+        int[] array_2 = new int[sizeOfArray_2];
+        for (int i = 0; i < sizeOfArray_1; i++) {
+            System.out.println("\tNhập vào giá trị của phần tử thứ " + (i + 1));
+            array_2[i] = scanner.nextInt();
+        }
+
 
 
 //        int[] array_1 = {1, 2, 3, 4, 5};
